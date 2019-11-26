@@ -1,4 +1,4 @@
---Áîëüøå ñêğèïòîâ îò àâòîğà ìîæíî íàéòè â ãğóïïå ÂÊ: http://vk.com/qrlk.mods
+--Ğ‘Ğ¾Ğ»ÑŒÑˆĞµ ÑĞºÑ€Ğ¸Ğ¿Ñ‚Ğ¾Ğ² Ğ¾Ñ‚ Ğ°Ğ²Ñ‚Ğ¾Ñ€Ğ° Ğ¼Ğ¾Ğ¶Ğ½Ğ¾ Ğ½Ğ°Ğ¹Ñ‚Ğ¸ Ğ² Ğ³Ñ€ÑƒĞ¿Ğ¿Ğµ Ğ’Ğš: http://vk.com/qrlk.mods
 --------------------------------------------------------------------------------
 -------------------------------------META---------------------------------------
 --------------------------------------------------------------------------------
@@ -36,7 +36,7 @@ function main()
         cX = math.ceil(cX)
         cY = math.ceil(cY)
         cZ = math.ceil(cZ)
-        sampAddChatMessage('[waypoint]: Óñòàíîâëåíà ìåòêà íà '..kvadY..'-'..kvadX.. '. Äèñòàíöèÿ: '..math.ceil(getDistanceBetweenCoords2d(coordX, coordY, cX, cY))..' ì.', - 1)
+        sampAddChatMessage('[waypoint]: Ğ£ÑÑ‚Ğ°Ğ½Ğ¾Ğ²Ğ»ĞµĞ½Ğ° Ğ¼ĞµÑ‚ĞºĞ° Ğ½Ğ° '..kvadY..'-'..kvadX.. '. Ğ”Ğ¸ÑÑ‚Ğ°Ğ½Ñ†Ğ¸Ñ: '..math.ceil(getDistanceBetweenCoords2d(coordX, coordY, cX, cY))..' Ğ¼.', - 1)
         placeWaypoint(coordX, coordY, 0)
       end
     end
@@ -45,7 +45,7 @@ end
 
 
 function changehotkey()
-  sampShowDialog(989, "Èçìåíåíèå ãîğÿ÷åé êëàâèøè", "Íàæìèòå \"Îêåé\", ïîñëå ÷åãî íàæìèòå íóæíóş êëàâèøó.\nÍàñòğîéêè áóäóò èçìåíåíû.", "Îêåé", "Çàêğûòü")
+  sampShowDialog(989, "Ğ˜Ğ·Ğ¼ĞµĞ½ĞµĞ½Ğ¸Ğµ Ğ³Ğ¾Ñ€ÑÑ‡ĞµĞ¹ ĞºĞ»Ğ°Ğ²Ğ¸ÑˆĞ¸", "ĞĞ°Ğ¶Ğ¼Ğ¸Ñ‚Ğµ \"ĞĞºĞµĞ¹\", Ğ¿Ğ¾ÑĞ»Ğµ Ñ‡ĞµĞ³Ğ¾ Ğ½Ğ°Ğ¶Ğ¼Ğ¸Ñ‚Ğµ Ğ½ÑƒĞ¶Ğ½ÑƒÑ ĞºĞ»Ğ°Ğ²Ğ¸ÑˆÑƒ.\nĞĞ°ÑÑ‚Ñ€Ğ¾Ğ¹ĞºĞ¸ Ğ±ÑƒĞ´ÑƒÑ‚ Ğ¸Ğ·Ğ¼ĞµĞ½ĞµĞ½Ñ‹.", "ĞĞºĞµĞ¹", "Ğ—Ğ°ĞºÑ€Ñ‹Ñ‚ÑŒ")
   while sampIsDialogActive(989) do wait(100) end
   local resultMain, buttonMain, typ = sampHasDialogRespond(988)
   if buttonMain == 1 then
@@ -54,7 +54,7 @@ function changehotkey()
       for i = 1, 200 do
         if isKeyDown(i) and key.id_to_name(i) ~= nil then
           settings.waypoint.key = i
-          sampAddChatMessage("Óñòàíîâëåíà íîâàÿ ãîğÿ÷àÿ êëàâèøà - "..i.."("..key.id_to_name(i)..")", - 1)
+          sampAddChatMessage("Ğ£ÑÑ‚Ğ°Ğ½Ğ¾Ğ²Ğ»ĞµĞ½Ğ° Ğ½Ğ¾Ğ²Ğ°Ñ Ğ³Ğ¾Ñ€ÑÑ‡Ğ°Ñ ĞºĞ»Ğ°Ğ²Ğ¸ÑˆĞ° - "..i.."("..key.id_to_name(i)..")", - 1)
           inicfg.save(settings, "waypoint")
           ke1y = 1
           break
@@ -92,56 +92,56 @@ end
 
 function kvadrat(param)
   local KV = {
-    ["à"] = 1,
+    ["Ğ°"] = 1,
     ["a"] = 1,
-    ["á"] = 2,
+    ["Ğ±"] = 2,
     ["b"] = 2,
-    ["â"] = 3,
+    ["Ğ²"] = 3,
     ["v"] = 3,
-    ["ã"] = 4,
+    ["Ğ³"] = 4,
     ["g"] = 4,
-    ["ä"] = 5,
+    ["Ğ´"] = 5,
     ["d"] = 5,
-    ["æ"] = 6,
+    ["Ğ¶"] = 6,
     ["j"] = 6,
-    ["ç"] = 7,
+    ["Ğ·"] = 7,
     ["z"] = 7,
-    ["è"] = 8,
+    ["Ğ¸"] = 8,
     ["i"] = 8,
-    ["ê"] = 9,
+    ["Ğº"] = 9,
     ["k"] = 9,
-    ["ë"] = 10,
+    ["Ğ»"] = 10,
     ["l"] = 10,
-    ["ì"] = 11,
+    ["Ğ¼"] = 11,
     ["m"] = 11,
-    ["í"] = 12,
+    ["Ğ½"] = 12,
     ["n"] = 12,
-    ["î"] = 13,
+    ["Ğ¾"] = 13,
     ["o"] = 13,
-    ["ï"] = 14,
+    ["Ğ¿"] = 14,
     ["p"] = 14,
-    ["ğ"] = 15,
+    ["Ñ€"] = 15,
     ["r"] = 16,
-    ["ñ"] = 16,
+    ["Ñ"] = 16,
     ["c"] = 16,
-    ["ò"] = 17,
+    ["Ñ‚"] = 17,
     ["t"] = 17,
-    ["ó"] = 18,
+    ["Ñƒ"] = 18,
     ["y"] = 18,
-    ["ô"] = 19,
+    ["Ñ„"] = 19,
     ["f"] = 19,
-    ["õ"] = 20,
+    ["Ñ…"] = 20,
     ["x"] = 20,
-    ["ö"] = 21,
-    ["÷"] = 22,
-    ["ø"] = 23,
-    ["ÿ"] = 24,
+    ["Ñ†"] = 21,
+    ["Ñ‡"] = 22,
+    ["Ñˆ"] = 23,
+    ["Ñ"] = 24,
   }
   return KV[param]
 end
 --string.rlower
 local russian_characters = {
-  [168] = '¨', [184] = '¸', [192] = 'À', [193] = 'Á', [194] = 'Â', [195] = 'Ã', [196] = 'Ä', [197] = 'Å', [198] = 'Æ', [199] = 'Ç', [200] = 'È', [201] = 'É', [202] = 'Ê', [203] = 'Ë', [204] = 'Ì', [205] = 'Í', [206] = 'Î', [207] = 'Ï', [208] = 'Ğ', [209] = 'Ñ', [210] = 'Ò', [211] = 'Ó', [212] = 'Ô', [213] = 'Õ', [214] = 'Ö', [215] = '×', [216] = 'Ø', [217] = 'Ù', [218] = 'Ú', [219] = 'Û', [220] = 'Ü', [221] = 'İ', [222] = 'Ş', [223] = 'ß', [224] = 'à', [225] = 'á', [226] = 'â', [227] = 'ã', [228] = 'ä', [229] = 'å', [230] = 'æ', [231] = 'ç', [232] = 'è', [233] = 'é', [234] = 'ê', [235] = 'ë', [236] = 'ì', [237] = 'í', [238] = 'î', [239] = 'ï', [240] = 'ğ', [241] = 'ñ', [242] = 'ò', [243] = 'ó', [244] = 'ô', [245] = 'õ', [246] = 'ö', [247] = '÷', [248] = 'ø', [249] = 'ù', [250] = 'ú', [251] = 'û', [252] = 'ü', [253] = 'ı', [254] = 'ş', [255] = 'ÿ',
+  [168] = 'Ğ', [184] = 'Ñ‘', [192] = 'Ğ', [193] = 'Ğ‘', [194] = 'Ğ’', [195] = 'Ğ“', [196] = 'Ğ”', [197] = 'Ğ•', [198] = 'Ğ–', [199] = 'Ğ—', [200] = 'Ğ˜', [201] = 'Ğ™', [202] = 'Ğš', [203] = 'Ğ›', [204] = 'Ğœ', [205] = 'Ğ', [206] = 'Ğ', [207] = 'ĞŸ', [208] = 'Ğ ', [209] = 'Ğ¡', [210] = 'Ğ¢', [211] = 'Ğ£', [212] = 'Ğ¤', [213] = 'Ğ¥', [214] = 'Ğ¦', [215] = 'Ğ§', [216] = 'Ğ¨', [217] = 'Ğ©', [218] = 'Ğª', [219] = 'Ğ«', [220] = 'Ğ¬', [221] = 'Ğ­', [222] = 'Ğ®', [223] = 'Ğ¯', [224] = 'Ğ°', [225] = 'Ğ±', [226] = 'Ğ²', [227] = 'Ğ³', [228] = 'Ğ´', [229] = 'Ğµ', [230] = 'Ğ¶', [231] = 'Ğ·', [232] = 'Ğ¸', [233] = 'Ğ¹', [234] = 'Ğº', [235] = 'Ğ»', [236] = 'Ğ¼', [237] = 'Ğ½', [238] = 'Ğ¾', [239] = 'Ğ¿', [240] = 'Ñ€', [241] = 'Ñ', [242] = 'Ñ‚', [243] = 'Ñƒ', [244] = 'Ñ„', [245] = 'Ñ…', [246] = 'Ñ†', [247] = 'Ñ‡', [248] = 'Ñˆ', [249] = 'Ñ‰', [250] = 'ÑŠ', [251] = 'Ñ‹', [252] = 'ÑŒ', [253] = 'Ñ', [254] = 'Ñ', [255] = 'Ñ',
 }
 function string.rlower(s)
   s = s:lower()
@@ -153,7 +153,7 @@ function string.rlower(s)
     local ch = s:byte(i)
     if ch >= 192 and ch <= 223 then -- upper russian characters
       output = output .. russian_characters[ch + 32]
-    elseif ch == 168 then -- ¨
+    elseif ch == 168 then -- Ğ
       output = output .. russian_characters[184]
     else
       output = output .. string.char(ch)
@@ -211,23 +211,23 @@ function update(php, prefix, url, komanda)
               lua_thread.create(function(prefix, komanda)
                 local dlstatus = require('moonloader').download_status
                 local color = -1
-                sampAddChatMessage((prefix..'Îáíàğóæåíî îáíîâëåíèå. Ïûòàşñü îáíîâèòüñÿ c '..thisScript().version..' íà '..updateversion), color)
+                sampAddChatMessage((prefix..'ĞĞ±Ğ½Ğ°Ñ€ÑƒĞ¶ĞµĞ½Ğ¾ Ğ¾Ğ±Ğ½Ğ¾Ğ²Ğ»ĞµĞ½Ğ¸Ğµ. ĞŸÑ‹Ñ‚Ğ°ÑÑÑŒ Ğ¾Ğ±Ğ½Ğ¾Ğ²Ğ¸Ñ‚ÑŒÑÑ c '..thisScript().version..' Ğ½Ğ° '..updateversion), color)
                 wait(250)
                 downloadUrlToFile(updatelink, thisScript().path,
                   function(id3, status1, p13, p23)
                     if status1 == dlstatus.STATUS_DOWNLOADINGDATA then
-                      print(string.format('Çàãğóæåíî %d èç %d.', p13, p23))
+                      print(string.format('Ğ—Ğ°Ğ³Ñ€ÑƒĞ¶ĞµĞ½Ğ¾ %d Ğ¸Ğ· %d.', p13, p23))
                     elseif status1 == dlstatus.STATUS_ENDDOWNLOADDATA then
-                      print('Çàãğóçêà îáíîâëåíèÿ çàâåğøåíà.')
+                      print('Ğ—Ğ°Ğ³Ñ€ÑƒĞ·ĞºĞ° Ğ¾Ğ±Ğ½Ğ¾Ğ²Ğ»ĞµĞ½Ğ¸Ñ Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°.')
                       if komandaA ~= nil then
-                        sampAddChatMessage((prefix..'Îáíîâëåíèå çàâåğøåíî! Ïîäğîáíåå îá îáíîâëåíèè - /'..komandaA..'.'), color)
+                        sampAddChatMessage((prefix..'ĞĞ±Ğ½Ğ¾Ğ²Ğ»ĞµĞ½Ğ¸Ğµ Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ¾! ĞŸĞ¾Ğ´Ñ€Ğ¾Ğ±Ğ½ĞµĞµ Ğ¾Ğ± Ğ¾Ğ±Ğ½Ğ¾Ğ²Ğ»ĞµĞ½Ğ¸Ğ¸ - /'..komandaA..'.'), color)
                       end
                       goupdatestatus = true
                       lua_thread.create(function() wait(500) thisScript():reload() end)
                     end
                     if status1 == dlstatus.STATUSEX_ENDDOWNLOAD then
                       if goupdatestatus == nil then
-                        sampAddChatMessage((prefix..'Îáíîâëåíèå ïğîøëî íåóäà÷íî. Çàïóñêàş óñòàğåâøóş âåğñèş..'), color)
+                        sampAddChatMessage((prefix..'ĞĞ±Ğ½Ğ¾Ğ²Ğ»ĞµĞ½Ğ¸Ğµ Ğ¿Ñ€Ğ¾ÑˆĞ»Ğ¾ Ğ½ĞµÑƒĞ´Ğ°Ñ‡Ğ½Ğ¾. Ğ—Ğ°Ğ¿ÑƒÑĞºĞ°Ñ ÑƒÑÑ‚Ğ°Ñ€ĞµĞ²ÑˆÑƒÑ Ğ²ĞµÑ€ÑĞ¸Ñ..'), color)
                         update = false
                       end
                     end
@@ -237,11 +237,11 @@ function update(php, prefix, url, komanda)
               )
             else
               update = false
-              print('v'..thisScript().version..': Îáíîâëåíèå íå òğåáóåòñÿ.')
+              print('v'..thisScript().version..': ĞĞ±Ğ½Ğ¾Ğ²Ğ»ĞµĞ½Ğ¸Ğµ Ğ½Ğµ Ñ‚Ñ€ĞµĞ±ÑƒĞµÑ‚ÑÑ.')
             end
           end
         else
-          print('v'..thisScript().version..': Íå ìîãó ïğîâåğèòü îáíîâëåíèå. Ñìèğèòåñü èëè ïğîâåğüòå ñàìîñòîÿòåëüíî íà '..url)
+          print('v'..thisScript().version..': ĞĞµ Ğ¼Ğ¾Ğ³Ñƒ Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€Ğ¸Ñ‚ÑŒ Ğ¾Ğ±Ğ½Ğ¾Ğ²Ğ»ĞµĞ½Ğ¸Ğµ. Ğ¡Ğ¼Ğ¸Ñ€Ğ¸Ñ‚ĞµÑÑŒ Ğ¸Ğ»Ğ¸ Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ÑŒÑ‚Ğµ ÑĞ°Ğ¼Ğ¾ÑÑ‚Ğ¾ÑÑ‚ĞµĞ»ÑŒĞ½Ğ¾ Ğ½Ğ° '..url)
           update = false
         end
       end
@@ -258,7 +258,7 @@ function openchangelog(komanda, url)
           if changelogurl == nil then
             changelogurl = url
           end
-          sampShowDialog(222228, "{ff0000}Èíôîğìàöèÿ îá îáíîâëåíèè", "{ffffff}"..thisScript().name.." {ffe600}ñîáèğàåòñÿ îòêğûòü ñâîé changelog äëÿ âàñ.\nÅñëè âû íàæìåòå {ffffff}Îòêğûòü{ffe600}, ñêğèïò ïîïûòàåòñÿ îòêğûòü ññûëêó:\n        {ffffff}"..changelogurl.."\n{ffe600}Åñëè âàøà èãğà êğàøíåòñÿ, âû ìîæåòå îòêğûòü ıòó ññûëêó ñàìè.", "Îòêğûòü", "Îòìåíèòü")
+          sampShowDialog(222228, "{ff0000}Ğ˜Ğ½Ñ„Ğ¾Ñ€Ğ¼Ğ°Ñ†Ğ¸Ñ Ğ¾Ğ± Ğ¾Ğ±Ğ½Ğ¾Ğ²Ğ»ĞµĞ½Ğ¸Ğ¸", "{ffffff}"..thisScript().name.." {ffe600}ÑĞ¾Ğ±Ğ¸Ñ€Ğ°ĞµÑ‚ÑÑ Ğ¾Ñ‚ĞºÑ€Ñ‹Ñ‚ÑŒ ÑĞ²Ğ¾Ğ¹ changelog Ğ´Ğ»Ñ Ğ²Ğ°Ñ.\nĞ•ÑĞ»Ğ¸ Ğ²Ñ‹ Ğ½Ğ°Ğ¶Ğ¼ĞµÑ‚Ğµ {ffffff}ĞÑ‚ĞºÑ€Ñ‹Ñ‚ÑŒ{ffe600}, ÑĞºÑ€Ğ¸Ğ¿Ñ‚ Ğ¿Ğ¾Ğ¿Ñ‹Ñ‚Ğ°ĞµÑ‚ÑÑ Ğ¾Ñ‚ĞºÑ€Ñ‹Ñ‚ÑŒ ÑÑÑ‹Ğ»ĞºÑƒ:\n        {ffffff}"..changelogurl.."\n{ffe600}Ğ•ÑĞ»Ğ¸ Ğ²Ğ°ÑˆĞ° Ğ¸Ğ³Ñ€Ğ° ĞºÑ€Ğ°ÑˆĞ½ĞµÑ‚ÑÑ, Ğ²Ñ‹ Ğ¼Ğ¾Ğ¶ĞµÑ‚Ğµ Ğ¾Ñ‚ĞºÑ€Ñ‹Ñ‚ÑŒ ÑÑ‚Ñƒ ÑÑÑ‹Ğ»ĞºÑƒ ÑĞ°Ğ¼Ğ¸.", "ĞÑ‚ĞºÑ€Ñ‹Ñ‚ÑŒ", "ĞÑ‚Ğ¼ĞµĞ½Ğ¸Ñ‚ÑŒ")
           while sampIsDialogActive() do wait(100) end
           local result, button, list, input = sampHasDialogRespond(222228)
           if button == 1 then
